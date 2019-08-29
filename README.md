@@ -1,3 +1,4 @@
+#test of code manager
 # A Puppet Control Repository
 
 * [What You Get From This control\-repo](#what-you-get-from-this-control-repo)
