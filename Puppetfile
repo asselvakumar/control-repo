@@ -18,7 +18,7 @@ forge 'https://forge.puppet.com'
 
 mod 'puppetlabs-puppet_agent', '2.2.0'
 mod 'puppetlabs-stdlib', '6.0.0'
-mod 'puppetlabs-inifile', '3.1.0'
+mod 'puppetlabs-inifile', '2.5.0'
 mod 'puppetlabs-translate', '2.0.0'
 mod 'puppetlabs-apt', '7.1.0'
 mod 'puppetlabs-facts', '0.6.0'
