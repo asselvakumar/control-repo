@@ -39,14 +39,14 @@ node 'pe-201819-agent-lb.puppetdebug.vlan' {
   }
   haproxy::balancermember { 'master00':
     listening_service => 'puppet00',
-    server_names      => 'master00.example.com',
+    server_names      => 'pe-201819-agent-cm01.puppetdebug.vlan',
     ipaddresses       => '10.0.0.10',
     ports             => '8140',
     options           => 'check',
   }
   haproxy::balancermember { 'master01':
     listening_service => 'puppet00',
-    server_names      => 'master01.example.com',
+    server_names      => 'pe-201819-agent-cm02.puppetdebug.vlan',
     ipaddresses       => '10.0.0.11',
     ports             => '8140',
     options           => 'check',
