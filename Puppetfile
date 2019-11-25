@@ -24,4 +24,4 @@ mod 'puppetlabs-apt', '7.1.0'
 mod 'puppetlabs-facts', '0.6.0'
 mod 'puppetlabs-concat', '6.1.0'
 mod 'puppetlabs-haproxy', '4.0.0'
-mod 'puppetlabs-puppet_agent', '2.2.2'
+
