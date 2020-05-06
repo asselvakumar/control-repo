@@ -11,16 +11,16 @@ puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 puppet_enterprise::master::puppetserver::reserved_code_cache: '96m'
 puppet_enterprise::profile::master::java_args:
   Xmx: '384m'
-  Xms: '128m'
-  'XX:MaxPermSize': '=96m'
-  'XX:PermSize': '=64m'
+  Xms: '384m'
+  'XX:MaxPermSize': '=128m'
+  'XX:PermSize': '=96m'
   'XX:+UseG1GC': ''
 
 puppet_enterprise::profile::puppetdb::java_args:
   Xmx: '512m'
   Xms: '512m'
-  'XX:MaxPermSize': '=96m'
-  'XX:PermSize': '=64m'
+  'XX:MaxPermSize': '=128m'
+  'XX:PermSize': '=96m'
   'XX:+UseG1GC': ''
 puppet_enterprise::puppetdb::read_maximum_pool_size: 4
 puppet_enterprise::puppetdb::write_maximum_pool_size: 2
@@ -28,8 +28,8 @@ puppet_enterprise::puppetdb::write_maximum_pool_size: 2
 puppet_enterprise::profile::console::java_args:
   Xmx: '256m'
   Xms: '256m'
-  'XX:MaxPermSize': '=96m'
-  'XX:PermSize': '=64m'
+  'XX:MaxPermSize': '=128m'
+  'XX:PermSize': '=96m'
   'XX:+UseG1GC': ''
 puppet_enterprise::trapperkeeper::database_settings::activity::maximum_pool_size: 2
 puppet_enterprise::trapperkeeper::database_settings::classifier::maximum_pool_size: 2
