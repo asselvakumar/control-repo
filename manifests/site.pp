@@ -29,26 +29,3 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
-
-node 'pe-201819-agent-lb.puppetdebug.vlan' {
-  include ::haproxy
-  haproxy::listen { 'puppet00':
-    collect_exported => false,
-    ipaddress        => $::ipaddress,
-    ports            => '8140',
-  }
-  haproxy::balancermember { 'master00':
-    listening_service => 'puppet00',
-    server_names      => 'pe-201819-agent-cm01.puppetdebug.vlan',
-    ipaddresses       => '10.0.0.10',
-    ports             => '8140',
-    options           => 'check',
-  }
-  haproxy::balancermember { 'master01':
-    listening_service => 'puppet00',
-    server_names      => 'pe-201819-agent-cm02.puppetdebug.vlan',
-    ipaddresses       => '10.0.0.11',
-    ports             => '8140',
-    options           => 'check',
-  }
-}
