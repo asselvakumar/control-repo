@@ -15,5 +15,3 @@ mod 'puppetlabs-translate', '2.0.0'
 mod 'puppetlabs-apt', '7.1.0'
 mod 'puppetlabs-facts', '0.6.0'
 mod 'puppetlabs-concat', '6.1.0'
-mod 'puppetlabs-haproxy', '4.0.0'
-
