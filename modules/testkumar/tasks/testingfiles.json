@@ -1,7 +1,13 @@
 {
   "puppet_task_version": 1,
   "supports_noop": false,
-  "description": "A short description of this task",
+  "description": "Start /Stop DU SBA TIMER service system ctl files",
+  "input_method": "environment",
   "parameters": {
+    "application_group": {
+      "type": "Enum[cppcore]",
+      "description": "Action stop, enable, disable, status, list-all."
+    },
+    "files":["/export/appl/du/du-common/utils/monitoring"]
   }
 }
