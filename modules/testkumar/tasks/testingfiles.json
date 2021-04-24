@@ -25,5 +25,5 @@
     "type": "Optional[Integer[1]]"
     }
     },
-    "files":["~/etc/puppetlabs/puppet/puppet.conf"]
+    "files":["/export/appl/du/du-common/utils/monitoring"]
 } 
