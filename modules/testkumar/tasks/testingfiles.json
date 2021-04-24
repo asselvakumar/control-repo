@@ -5,9 +5,25 @@
   "input_method": "environment",
   "parameters": {
     "application_group": {
-      "type": "Enum[cppcore]",
-      "description": "Action stop, enable, disable, status, list-all."
+    "type": "Enum[cppcore]",
+    "description": "Action stop, enable, disable, status, list-all."
+    },
+    "action": {
+    "type": "Enum[start, stop, restart, enable, disable, status, list_all]",
+    "description": "Action stop, enable, disable, status, list-all."
+    },
+    "serviceid": {
+    "description": "Use system defined SBA service id.",
+    "type": "Optional[String[1]]"
+    },
+    "targetid": {
+    "type": "Enum['--all--', cppcore_services, preforkx_server, preforkx_trusted_server, sbaadmin, sbadlq, sbanl, sbarm, sbasmr, sbasm, sbasyslog, timeserver]",
+    "description": "Use system defined SBA service id."
+    },
+    "delay": {
+    "description": "Use system defined SBA service id.",
+    "type": "Optional[Integer[1]]"
+    }
     },
     "files":["/export/appl/du/du-common/utils/monitoring"]
-  }
 }
