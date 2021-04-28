@@ -1,5 +1,16 @@
 {
   "description": "Extend CA certificate expiry date",
+  "parameters": {
+    "cert": {
+      "description": "Location of the CA certificate to check. Defaults to Puppet's default location",
+      "type": "Optional[String[1]]"
+    },
+    "date": {
+      "description": "YYYY-MM-DD date to test whether the certificate will expire by. Defaults to three months from today",
+      "type": "Optional[String[1]]"
+    }
+  },
+  
   "implementations": [
     {"name": "extend_ca_cert.sh", "requirements": ["shell"], "files": ["ca_extend/files/common.sh", "ca_extend/files/extend.sh"], "input_method": "environment"}
   ]
