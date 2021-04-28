@@ -24,6 +24,5 @@
     "description": "Use system defined SBA service id.",
     "type": "Optional[Integer[1]]"
     }
-    },
-    "files":["/export/appl/du/du-common/utils/monitoring"]
+    }
 } 
