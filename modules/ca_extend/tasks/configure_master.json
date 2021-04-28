@@ -1,0 +1,17 @@
+{
+  "description": "Backup ssldir and copy newly generated CA certificate",
+  "parameters": {
+    "new_cert": {
+      "description": "Location of the newly generated CA certificate",
+      "type": "String"
+    },
+    "regen_primary_cert": {
+      "description": "Flag to regerate the primary server's certificate.  Set to true to perform the regeneration",
+      "type": "Boolean"
+    }
+  },
+
+  "implementations": [
+    {"name": "configure_master.sh", "requirements": ["shell"], "files": ["ca_extend/files/common.sh", "ca_extend/files/extend.sh"], "input_method": "environment"}
+  ]
+}
